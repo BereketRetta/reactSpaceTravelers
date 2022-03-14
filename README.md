@@ -45,7 +45,7 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@githubhandle](https://github.com/SirriRyisa)
 - Twitter: [@twitterhandle](https://twitter.com/n_ryisa)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ryisa-sirri-ngwa-a30013202)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/sirri-ngwa-ryisa/)
 
 ## 🤝 Contributing
 
