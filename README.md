@@ -35,11 +35,17 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@bekiopia](https://twitter.com/bekiopia)
 - LinkedIn: [BereketRetta](https://linkedin.com/in/bereket-retta)
 
-👤 **Author2**
+👤 **Verissimo Francis**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/VTY1999)
+- Twitter: [@twitterhandle](https://twitter.com/verissimoty?s=09)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/francis-o-verissimo/)
+
+👤 **Sirri Ryisa**
+
+- GitHub: [@githubhandle](https://github.com/SirriRyisa)
+- Twitter: [@twitterhandle](https://twitter.com/n_ryisa)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ryisa-sirri-ngwa-a30013202)
 
 ## 🤝 Contributing
 
