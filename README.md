@@ -40,11 +40,11 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Bereket Retta**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@bereketRetta](https://github.com/bereketretta)
+- Twitter: [@bekiopia](https://twitter.com/bekiopia)
+- LinkedIn: [BereketRetta](https://linkedin.com/in/bereket-retta)
 
 👤 **Author2**
 
