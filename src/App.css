@@ -51,9 +51,13 @@ h1 {
 .nav-link a {
   text-decoration: none;
   padding: 5px;
-  font-size: 20px;
+  font-size: 17px;
   color: var(--main-color);
   cursor: pointer;
+}
+
+.nav-link a.active {
+  text-decoration: underline;
 }
 
 #dragons {
@@ -205,7 +209,7 @@ h2 {
 .mission-prof-name {
   margin: 0;
   padding: 12px;
-  font-size: 20px;
+  font-size: 17px;
   border-bottom: 1px solid #918e8e;
 }
 
@@ -231,8 +235,8 @@ h2 {
   padding: 1px 1px;
 }
 
-tr:nth-child(2n) {
-  background-color: rgb(223, 224, 226);
+tr:nth-child(even) {
+  background-color: #dfe0e2;
 }
 
 .mission-D,
