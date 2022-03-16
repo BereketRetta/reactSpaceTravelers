@@ -4,6 +4,7 @@
 
 > In this task, we will be working with the real live data from the SpaceX API. Our task is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
+![screenshot](https://github.com/BereketRetta/reactSpaceTravelers/blob/MergeToDev/src/images/Screenshot%20(120).png)
 
 ## Built With
 
@@ -11,9 +12,9 @@
 - CSS3
 - HTML 5
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo](https://reactspacehub.netlify.app/)
 
 
 ## Getting Started
@@ -51,7 +52,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/BereketRetta/reactSpaceTravelers/issues).
 
 ## Show your support
 
