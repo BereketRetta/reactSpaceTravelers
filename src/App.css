@@ -25,6 +25,7 @@ nav {
 .logo {
   display: flex;
   flex-direction: row;
+  
 }
 
 h1 {
@@ -46,6 +47,7 @@ h1 {
   width: 45%;
   margin-left: 30%;
   margin-top: 22px;
+  background-repeat: repeat;
 }
 
 .nav-link a {
@@ -83,7 +85,7 @@ h1 {
 .dragon-img {
   width: 250px;
   margin-right: 20px;
-  box-shadow: 5px 5px 5px 5px rgb(214, 72, 100);
+  box-shadow: 5px 5px 5px 5px #ad1130ad;
 }
 
 .rocket-info,
@@ -111,10 +113,12 @@ h1 {
   margin: 4px 2px;
   padding: 10px 6px;
   cursor: pointer;
+  transition: 500ms ease-in;
 }
 
 .reserve-btn:hover {
   box-shadow: 4px 4px 4px lightseagreen;
+  transform: scale(1.05);
 }
 
 .Not-A-member {
