@@ -12,9 +12,9 @@
 - CSS3
 - HTML 5
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://reactspacehub.netlify.app/)
+[Live Demo](https://reactspacehub.netlify.app/)
 
 
 ## Getting Started
