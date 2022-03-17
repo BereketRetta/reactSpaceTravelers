@@ -25,7 +25,7 @@ export default function Rocket() {
               {rocket.reserved && (<span className="reserved-r">Reserved</span>)}
               {rocket.description}
             </p>
-            {rocket.reserved ? (
+            {rocket.reserved && (
               <button
                 type="button"
                 className={!rocket.reserved === true ? 'reserve-btn' : 'cancel-btn'}
@@ -33,7 +33,9 @@ export default function Rocket() {
               >
                 {!rocket.reserved === true ? 'Reserved Rocket' : 'Cancel Reservation'}
               </button>
-            ) : (
+            )}
+
+            {!rocket.reserved && (
               <button
                 type="button"
                 className={!rocket.reserved === true ? 'reserve-btn' : 'cancel-btn'}

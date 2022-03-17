@@ -26,7 +26,7 @@ export default function Dragons() {
               {dragon.type}
             </p>
 
-            {dragon.reserved ? (
+            {dragon.reserved && (
               <button
                 type="button"
                 className={!dragon.reserved === true ? 'reserve-btn' : 'cancel-btn'}
@@ -34,14 +34,15 @@ export default function Dragons() {
               >
                 {!dragon.reserved === true ? 'Reserved Dragon' : 'Cancel Reservation'}
               </button>
-            ) : (
-              <button
-                type="button"
-                className={!dragon.reserved === true ? 'reserve-btn' : 'cancel-btn'}
-                onClick={() => dispatch(reserveDragons(dragon.id))}
-              >
-                {!dragon.reserved === true ? 'Reserved Dragon' : 'Cancel Reservation'}
-              </button>
+            )}
+            {!dragon.reserved && (
+            <button
+              type="button"
+              className={!dragon.reserved === true ? 'reserve-btn' : 'cancel-btn'}
+              onClick={() => dispatch(reserveDragons(dragon.id))}
+            >
+              {!dragon.reserved === true ? 'Reserved Dragon' : 'Cancel Reservation'}
+            </button>
             )}
           </div>
         </ul>
