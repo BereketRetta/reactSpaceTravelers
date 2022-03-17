@@ -5,20 +5,12 @@ import { getRockets, reserveRockets, cancelRockets } from '../Redux/Rockets/rock
 export default function Rocket() {
   const dispatch = useDispatch();
   const rocketNum = useSelector((state) => state.rockets);
-  const reserveHandler = (id) => {
-    dispatch(reserveRockets(id));
-  };
-  const cancelHandler = (id) => {
-    dispatch(cancelRockets(id));
-  };
 
   useEffect(() => {
     if (rocketNum.length === 0) {
       dispatch(getRockets());
     }
   }, []);
-
-  let reserved = null;
 
   return (
     <div className="rocket-c">
@@ -33,23 +25,23 @@ export default function Rocket() {
               {rocket.reserved && (<span className="reserved-r">Reserved</span>)}
               {rocket.description}
             </p>
-            <button
-              type="button"
-              className={!rocket.reserved === true ? 'reserve-btn' : 'cancel-btn'}
-              onClick={
-              () => {
-                reserved = rocket.reserved;
-                if (!reserved) {
-                  reserveHandler(rocket.id);
-                } else {
-                  cancelHandler(rocket.id);
-                }
-              }
-            }
-            >
-              {!rocket.reserved === true ? 'Reserved Rocket' : 'Cancel Reservation'}
-
-            </button>
+            {rocket.reserved ? (
+              <button
+                type="button"
+                className={!rocket.reserved === true ? 'reserve-btn' : 'cancel-btn'}
+                onClick={() => dispatch(cancelRockets(rocket.id))}
+              >
+                {!rocket.reserved === true ? 'Reserved Rocket' : 'Cancel Reservation'}
+              </button>
+            ) : (
+              <button
+                type="button"
+                className={!rocket.reserved === true ? 'reserve-btn' : 'cancel-btn'}
+                onClick={() => dispatch(reserveRockets(rocket.id))}
+              >
+                {!rocket.reserved === true ? 'Reserved Rocket' : 'Cancel Reservation'}
+              </button>
+            )}
           </div>
         </ul>
       ))}

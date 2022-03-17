@@ -5,20 +5,12 @@ import { getDragons, reserveDragons, cancelDragons } from '../Redux/dragons/drag
 export default function Dragons() {
   const dispatch = useDispatch();
   const dragons = useSelector((state) => state.dragons);
-  const reserveHandler = (id) => {
-    dispatch(reserveDragons(id));
-  };
-  const cancelHandler = (id) => {
-    dispatch(cancelDragons(id));
-  };
 
   useEffect(() => {
     if (dragons.length === 0) {
       dispatch(getDragons());
     }
   }, []);
-
-  let reserved = null;
 
   return (
     <div className="dragon-c">
@@ -33,22 +25,24 @@ export default function Dragons() {
               {dragon.reserved && (<span className="reserved-r">Reserved</span>)}
               {dragon.type}
             </p>
-            <button
-              type="button"
-              className={!dragon.reserved === true ? 'reserve-btn' : 'cancel-btn'}
-              onClick={
-              () => {
-                reserved = dragon.reserved;
-                if (!reserved) {
-                  reserveHandler(dragon.id);
-                } else {
-                  cancelHandler(dragon.id);
-                }
-              }
-            }
-            >
-              {!dragon.reserved === true ? 'Reserved Dragon' : 'Cancel Reservation'}
-            </button>
+
+            {dragon.reserved ? (
+              <button
+                type="button"
+                className={!dragon.reserved === true ? 'reserve-btn' : 'cancel-btn'}
+                onClick={() => dispatch(cancelDragons(dragon.id))}
+              >
+                {!dragon.reserved === true ? 'Reserved Dragon' : 'Cancel Reservation'}
+              </button>
+            ) : (
+              <button
+                type="button"
+                className={!dragon.reserved === true ? 'reserve-btn' : 'cancel-btn'}
+                onClick={() => dispatch(reserveDragons(dragon.id))}
+              >
+                {!dragon.reserved === true ? 'Reserved Dragon' : 'Cancel Reservation'}
+              </button>
+            )}
           </div>
         </ul>
       ))}

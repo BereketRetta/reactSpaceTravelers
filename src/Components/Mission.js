@@ -7,27 +7,28 @@ const Mission = (props) => {
   const { missionInfo } = props;
   const dispatch = useDispatch();
 
-  const Join = () => {
+  /* const Join = () => {
     dispatch(JoinMission(missionInfo.id));
-  };
+  }; */
 
   return (
     <tr>
       <td className="mission-name"><h3>{missionInfo.name}</h3></td>
       <td className="mission-description"><p>{missionInfo.description}</p></td>
       <td className="mission-status">
-        {
-          (missionInfo.joined)
-            ? <h5 className="Active-member">Active Member</h5>
-            : <h5 className="Not-A-member">NOT A MEMBER</h5>
-        }
+
+        {missionInfo.joined
+          ? <h5 className="Active-member">Active Member</h5>
+          : <h5 className="Not-A-member">NOT A MEMBER</h5>}
+
       </td>
       <td>
         {
-          (missionInfo.joined)
-            ? <button type="button" className="leave-mission-btn" onClick={Join}> Leave Mission </button>
-            : <button type="button" className="join-mission-btn" onClick={Join}> Join Mission </button>
-        }
+          missionInfo.joined ? (
+            <button type="button" className="leave-mission-btn" onClick={() => dispatch(JoinMission(missionInfo.id))}> Leave Mission </button>
+          ) : (<button type="button" className="join-mission-btn" onClick={() => dispatch(JoinMission(missionInfo.id))}> Join Mission </button>
+          )
+}
       </td>
     </tr>
   );
