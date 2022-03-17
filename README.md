@@ -1,62 +1,53 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Space Travelers hub
 
-> Description the project.
+> In this task, we will be working with the real live data from the SpaceX API. Our task is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
+![screenshot](https://github.com/BereketRetta/reactSpaceTravelers/blob/MergeToDev/src/images/Screenshot%20(120).png)
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- React-Redux
+- CSS3
+- HTML 5
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo](https://reactspacehub.netlify.app/)
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+*To clone this project :
+*Run command:
+*Or press the green Code button in the upper right corner and choose to download from the Download ZIP link.
+*Open terminal and type : 1- npm install 2- npm run build. 3- npm start.
 
 ## Authors
 
-👤 **Author1**
+👤 **Bereket Retta**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@bereketRetta](https://github.com/bereketretta)
+- Twitter: [@bekiopia](https://twitter.com/bekiopia)
+- LinkedIn: [BereketRetta](https://linkedin.com/in/bereket-retta)
 
-👤 **Author2**
+👤 **Verissimo Francis**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/VTY1999)
+- Twitter: [@twitterhandle](https://twitter.com/verissimoty?s=09)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/francis-o-verissimo/)
+
+👤 **Sirri Ryisa**
+
+- GitHub: [@githubhandle](https://github.com/SirriRyisa)
+- Twitter: [@twitterhandle](https://twitter.com/n_ryisa)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/sirri-ngwa-ryisa/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/BereketRetta/reactSpaceTravelers/issues).
 
 ## Show your support
 
