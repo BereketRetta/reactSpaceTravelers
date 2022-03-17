@@ -23,11 +23,6 @@
 *Or press the green Code button in the upper right corner and choose to download from the Download ZIP link.
 *Open terminal and type : 1- npm install 2- npm run build. 3- npm start.
 
-
-To get a local copy up and running follow these simple example steps.
-
-
-
 ## Authors
 
 👤 **Bereket Retta**
