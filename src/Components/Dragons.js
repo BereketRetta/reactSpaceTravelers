@@ -32,7 +32,7 @@ export default function Dragons() {
                 className={!dragon.reserved === true ? 'reserve-btn' : 'cancel-btn'}
                 onClick={() => dispatch(cancelDragons(dragon.id))}
               >
-                {!dragon.reserved === true ? 'Reserved Dragon' : 'Cancel Reservation'}
+                Cancel Reservation
               </button>
             )}
             {!dragon.reserved && (
@@ -41,7 +41,7 @@ export default function Dragons() {
               className={!dragon.reserved === true ? 'reserve-btn' : 'cancel-btn'}
               onClick={() => dispatch(reserveDragons(dragon.id))}
             >
-              {!dragon.reserved === true ? 'Reserved Dragon' : 'Cancel Reservation'}
+              Reserve Dragon
             </button>
             )}
           </div>

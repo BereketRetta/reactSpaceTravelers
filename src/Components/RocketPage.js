@@ -31,7 +31,7 @@ export default function Rocket() {
                 className={!rocket.reserved === true ? 'reserve-btn' : 'cancel-btn'}
                 onClick={() => dispatch(cancelRockets(rocket.id))}
               >
-                {!rocket.reserved === true ? 'Reserved Rocket' : 'Cancel Reservation'}
+                Cancel Reservation
               </button>
             )}
 
@@ -41,7 +41,7 @@ export default function Rocket() {
                 className={!rocket.reserved === true ? 'reserve-btn' : 'cancel-btn'}
                 onClick={() => dispatch(reserveRockets(rocket.id))}
               >
-                {!rocket.reserved === true ? 'Reserved Rocket' : 'Cancel Reservation'}
+                Reserve Rocket
               </button>
             )}
           </div>
